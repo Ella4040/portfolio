@@ -1,0 +1,112 @@
+.about__container{
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+}
+
+.about__data{
+    padding: 1.875rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--boder-radius);
+    grid-template-columns: repeat(2, 1fr );
+    column-gap: 1.875rem;
+    align-items: flex-start;
+    position: relative;
+    border: 0.1px solid var(--first-color);
+}
+
+.about__data::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent ;
+    border-right: 20px solid var(--first-color);
+    position: absolute;
+    left: -0.99rem;
+    top: 30%;
+}
+
+.about__description{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.about__skills{
+    row-gap: 1rem;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__number{
+    line-height: 1.2;
+}
+
+.skills_bar,
+.skills__percentage{
+    height: 7px;
+    border-radius: 0.25rem;
+}
+/*
+.skills_bar{
+    background-color: blue;
+}
+*/
+
+.skills__percentage{
+    display: block;
+    background-color: var(--first-color);
+}
+
+.frontend{
+    width: 90%;
+    background-color: var(--first-color);
+}
+
+.ui__design{
+    width: 75%;
+    background-color: var(--first-color);
+}
+
+.backend{
+    width: 88%;
+    background-color: var(--first-color);
+}
+
+.full{
+    width: 89%;
+    background-color: var(--first-color);
+}
+
+.about__boxes{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.875rem;
+    margin-top: 4.25rem;
+}
+
+.about__box{
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.about__icon{
+    font-size: var(--h1-font-size);
+    color: #2929dd;
+}
+
+.about__title{
+    font-size: 1.5rem;
+}
+
+.about__img{
+    height: 180px;
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import "./App.css";
 import Sidebar from './components/sidebar/Sidebar';
-import Services from './components/services/Services';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Resume from './components/resume/Resume';
@@ -9,6 +8,7 @@ import Portfolio from './components/portfolio/Portfolio';
 import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
 import Testimonials from './components/testimonials/Testimonials'
+import Skills from './components/Skills/Skills';
 
 const App = () => {
   return (
@@ -17,8 +17,8 @@ const App = () => {
       <main className='main'>
         <Home />
         <About />
+        <Skills />
         <Resume />
-        <Services />
         <Portfolio />
         <Testimonials />
         <Blog />
